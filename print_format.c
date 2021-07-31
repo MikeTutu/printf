@@ -63,7 +63,7 @@ int _print_spec(char format, va_list args)
 		{"s", _print_a_string},
 		{"d", _print_a_integer},
 		{"i", _print_a_integer},
-		{"b", _print_binary},
+		{"b", _print_int_binary},
 		{"u", _print_unsigned},
 		{"o", _print_octal},
 		{NULL, NULL}
