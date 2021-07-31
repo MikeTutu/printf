@@ -63,7 +63,9 @@ int _print_spec(char format, va_list args)
 		{"s", _print_a_string},
 		{"d", _print_a_integer},
 		{"i", _print_a_integer},
-		{"b", _print_int_binary},
+		{"b", _print_binary},
+		{"u", _print_unsigned},
+		{"o", _print_octal},
 		{NULL, NULL}
 	};
 
@@ -111,7 +113,7 @@ int _print_invalid_spec(char prev_format, char format, int count)
   */
 int _validate_char(char _type)
 {
-	char _types[] = {'c', 's', 'd', 'i', 'b', '%'};
+  char _types[] = {'c', 's', 'd', 'i', 'b', '%', 'u', 'o'};
 	int i = 0;
 
 	while (_types[i])

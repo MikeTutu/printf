@@ -1,7 +1,9 @@
 #ifndef _PRINTF
 #define _PRINTF
 #include <stdarg.h>
-
+#include <stdlib.h>
+#include <limits.h>
+#include <stdarg.h>
 /**
   * struct specifiers - Struct specifiers
   * @specifier: The conversion specifier
@@ -25,5 +27,11 @@ void _recursion_integer(int a);
 int _print_int_binary(va_list args);
 void _recursion_int_binary(int a);
 int _validate_char(char _type);
-
+int _print_unsigned(va_list args);
+void printstr(char *str);
+int num_len(unsigned int num);
+char *tostring(char st[], long int num, int length);
+int _print_binary(va_list num);
+int _pow_recursion(int x, int y);
+int _print_octal(va_list args);
 #endif/* _PRINTF */
