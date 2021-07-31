@@ -113,7 +113,7 @@ int _print_invalid_spec(char prev_format, char format, int count)
   */
 int _validate_char(char _type)
 {
-  char _types[] = {'c', 's', 'd', 'i', 'b', '%', 'u', 'o'};
+	char _types[] = {'c', 's', 'd', 'i', 'b', '%', 'u', 'o'};
 	int i = 0;
 
 	while (_types[i])
