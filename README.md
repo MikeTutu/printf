@@ -1,3 +1,3 @@
 Printf Repository.
-this is a project to create out own printf function, that
+This is a project to create out own printf function, that
 print out formated text the stdout
